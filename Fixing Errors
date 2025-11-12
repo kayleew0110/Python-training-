@@ -1,0 +1,210 @@
+Python 3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Fix the errors
+>>> 2+2
+4
+>>> Print("Hello world")
+Traceback (most recent call last):
+  File "<python-input-2>", line 1, in <module>
+    Print("Hello world")
+    ^^^^^
+NameError: name 'Print' is not defined. Did you mean: 'print'?
+>>> print("Hello world")
+Hello world
+>>> x=5
+>>> y=10
+>>> print(x+y)
+15
+>>> name = input (What is your name?)
+  File "<python-input-7>", line 1
+    name = input (What is your name?)
+                  ^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> name= input(Areyon)
+Traceback (most recent call last):
+  File "<python-input-8>", line 1, in <module>
+    name= input(Areyon)
+                ^^^^^^
+NameError: name 'Areyon' is not defined
+>>> name= input("Areyon")
+Areyon
+>>> print ("Hi",name)
+Hi
+>>> print("Hi","Areyon")
+Hi Areyon
+>>> print("Hi", + Areyon)
+Traceback (most recent call last):
+  File "<python-input-12>", line 1, in <module>
+    print("Hi", + Areyon)
+                  ^^^^^^
+NameError: name 'Areyon' is not defined
+>>> print("Hi", + "Areyon")
+Traceback (most recent call last):
+  File "<python-input-13>", line 1, in <module>
+    print("Hi", + "Areyon")
+                ^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+>>> ("Hi",+"Areyon")
+Traceback (most recent call last):
+  File "<python-input-14>", line 1, in <module>
+    ("Hi",+"Areyon")
+          ^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+>>> print("Hi",+"Areyon")
+Traceback (most recent call last):
+  File "<python-input-15>", line 1, in <module>
+    print("Hi",+"Areyon")
+               ^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+>>> print("Hi",+"name")
+Traceback (most recent call last):
+  File "<python-input-16>", line 1, in <module>
+    print("Hi",+"name")
+               ^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+>>> print("Hi","Areyon")
+Hi Areyon
+>>> if 5 > 3
+  File "<python-input-18>", line 1
+    if 5 > 3
+            ^
+SyntaxError: expected ':'
+>>> if 5 > 3:
+...     print("five is greater!")
+...
+five is greater!
+>>>
+>>> age= input('24')
+24
+>>> print("25"+ 24+ 1)
+Traceback (most recent call last):
+  File "<python-input-22>", line 1, in <module>
+    print("25"+ 24+ 1)
+          ~~~~^~~~
+TypeError: can only concatenate str (not "int") to str
+>>> print("25"+"24"+1)
+Traceback (most recent call last):
+  File "<python-input-23>", line 1, in <module>
+    print("25"+"24"+1)
+          ~~~~~~~~~^~
+TypeError: can only concatenate str (not "int") to str
+>>> print("25" + "24" + "1")
+25241
+>>> print("25" + "24")
+2524
+>>> print("25", + "24", + "1")
+Traceback (most recent call last):
+  File "<python-input-26>", line 1, in <module>
+    print("25", + "24", + "1")
+                ^^^^^^
+TypeError: bad operand type for unary +: 'str'
+>>> print("25" +, "24" +, "1")
+  File "<python-input-27>", line 1
+    print("25" +, "24" +, "1")
+                ^
+SyntaxError: invalid syntax
+>>> print (" 25 + 24 + 1 ")
+ 25 + 24 + 1
+>>> print("25" + age + 1)
+Traceback (most recent call last):
+  File "<python-input-29>", line 1, in <module>
+    print("25" + age + 1)
+          ~~~~~~~~~~~^~~
+TypeError: can only concatenate str (not "int") to str
+>>> print("25" + "age" + "1")
+25age1
+>>> print ("25 + 24 +1")
+25 + 24 +1
+>>> print (25 + 24 +1)
+50
+>>> age =input("24")
+24
+>>> print("Next year you will be" + 24 +1)
+Traceback (most recent call last):
+  File "<python-input-34>", line 1, in <module>
+    print("Next year you will be" + 24 +1)
+          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+TypeError: can only concatenate str (not "int") to str
+>>> print("Next year you will be" "24 +1")
+Next year you will be24 +1
+>>> print (24 +1)
+25
+>>> print( "name" 24 +1 )
+  File "<python-input-37>", line 1
+    print( "name" 24 +1 )
+           ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print("name", 24 +1)
+name 25
+>>> print("Next year Areyon will be" , 24 +1)
+Next year Areyon will be 25
+>>> fruits = ("apple","banana", "grape")
+>>> for fruit fruits:
+  File "<python-input-41>", line 1
+    for fruit fruits:
+              ^^^^^^
+SyntaxError: invalid syntax
+>>> for fruit fruit:
+  File "<python-input-42>", line 1
+    for fruit fruit:
+              ^^^^^
+SyntaxError: invalid syntax
+>>> for fruit:
+  File "<python-input-43>", line 1
+    for fruit:
+             ^
+SyntaxError: invalid syntax
+>>> x = 10
+>>> y = 24
+>>> print (x> y)
+False
+>>> print (y>x)
+True
+>>> print (x=x)
+Traceback (most recent call last):
+  File "<python-input-48>", line 1, in <module>
+    print (x=x)
+    ~~~~~~^^^^^
+TypeError: print() got an unexpected keyword argument 'x'
+>>> print (x==10)
+True
+>>> colors = "red", "blue", "green"
+>>> print (colors[1])
+blue
+>>> colors = "red", "blue", "green"
+>>> print(colors[0])
+red
+>>> colors = ("red", "blue", "green")
+>>> print(colors[0,1,2])
+Traceback (most recent call last):
+  File "<python-input-55>", line 1, in <module>
+    print(colors[0,1,2])
+          ~~~~~~^^^^^^^
+TypeError: tuple indices must be integers or slices, not tuple
+>>> print(colors[0],[1],[2])
+red [1] [2]
+>>> print(colors[0][1][2])
+Traceback (most recent call last):
+  File "<python-input-57>", line 1, in <module>
+    print(colors[0][1][2])
+          ~~~~~~~~~~~~^^^
+IndexError: string index out of range
+>>> print(colors[2])
+green
+>>> print(colors 1)
+  File "<python-input-59>", line 1
+    print(colors 1)
+          ^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(colors[0,1,2])
+Traceback (most recent call last):
+  File "<python-input-60>", line 1, in <module>
+    print(colors[0,1,2])
+          ~~~~~~^^^^^^^
+TypeError: tuple indices must be integers or slices, not tuple
+>>> print(colors[012]
+  File "<python-input-61>", line 1
+    print(colors[012]
+                 ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+>>> print(colors)
