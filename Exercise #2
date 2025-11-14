@@ -1,0 +1,11 @@
+animals = ['dog', 'cat', 'bird']
+print(animals [0]) # Fix so it prints out 1st item
+
+# 7--> if statement --> ADD ELSE STATEMENT
+age = '18'
+    Else age >='18': 
+    print('Welcome!')
+    
+#8 --> Fix so it doesn't crash! 
+data = [1,2,3]
+print(data[5])
