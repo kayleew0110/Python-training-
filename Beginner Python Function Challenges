@@ -34,4 +34,17 @@ try:
 except Exception as e:
     print("Error:", e)
 
-  
+  # fix the list so it prints the last food item
+food=['pizza', 'tacos','sushi']
+print(food[-1])
+
+# This loop should count down from 5 to 1
+for i in range(1,5):
+    print(i)
+    
+    
+#fix this code so it prints only even numbers
+nums=[1,2,3,4,5,6]
+for n in nums:
+    if n % 2-1:
+        print(n)
