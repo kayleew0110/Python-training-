@@ -1,0 +1,37 @@
+print('Hello benji')
+a= "2"
+b= "3"
+input(a+b)
+for _ in range(3):
+    print("pineapples")
+    
+def last_letter(word):
+    """
+    Returns the last letter of the given word.
+    Handles empty strings, whitespace, and invalid inputs.
+    """
+    # Validate input type
+    if not isinstance(word, str):
+        raise TypeError("Input must be a string.")
+
+    # Remove surrounding spaces
+    word = word.strip()
+
+    # Handle empty string after trimming
+    if not word:
+        return None  # or '' if you prefer an empty string
+
+    # Return the last character
+    return word[-1]
+
+
+# Example usage:
+try:
+    print(last_letter("stanley"))      # Output: 'y'
+    print(last_letter("Python "))    # Output: 'n'
+    print(last_letter("  A  "))      # Output: 'A'
+    print(last_letter(""))           # Output: None
+except Exception as e:
+    print("Error:", e)
+
+  
