@@ -1,0 +1,45 @@
+   def intro(): 
+    print("Welcome to Baby Dragon Care!")
+    print("You found a baby dragon egg in the forest.")
+    print("The egg is shaking... it might hatch soon!")
+    print("Your job is to take care of the baby dragon once it hatches")
+
+def choose action():
+    print("What would you like to do?")
+    print ("1. Feed the baby dragon")
+    print ("2. Play with the baby dragon")
+    print ("3. Put the baby dragon to sleep")
+    print ("4. Check dragon's status")
+    action =""
+    while action not in ["1","2","3","4"]
+        action = input ("Choose an action (1-4): ")
+    return action
+    
+    def feed (dragon):
+        food = ["berries', "fish", "goat milk"]
+        chosen_food + random.chocie (food)
+        print(f"You feed the dragon some[chosen_food].")
+        dragon["hunger"] -= 2
+        dragon["happiness"] += 1
+        
+    def play(dragon):
+        games = ["tag", hide- and- seek", "rock toss"]
+        chosen_game = random. chosen(games)
+        print(f"You play {chosen_game} with the baby dragon." )
+        dragon{"energy"} -= 1
+        
+    def sleep{dragon}:
+            print("You tuck the dragon into a warm nest.")
+            dragon("energy") += 3
+            dragon("hunger") += 1
+            
+    def status (drgaon):
+        print("\nDragon Status:")
+        print(f'Hunger: {dragon[hunger]}')
+        print(f'Happpiness:{ dragon[happiness]}')
+        print(f'Energy:{dragon[ energy]}') 
+        
+    def hatch_egg():
+        print("The egg cracks open...")
+        print("A tiny baby dragon looks up at you!")
+        return {"hunger": 2, "happiness": 3, "energy":3}
